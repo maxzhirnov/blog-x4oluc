@@ -20,12 +20,12 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Growth Marketing Expert
+role: Growth Marketing Expert & Product Strategist
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Independent Marketing Technology Consultant
+    url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
@@ -57,6 +57,5 @@ highlight_name: true
 website: ""
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include
-distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops
-self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+
+Maxim Zhirnov is a senior growth marketing strategist and industry expert with 10+ years of experience scaling digital products from startup to enterprise level, specializing in data-driven growth optimization, user acquisition strategies, and product-led growth frameworks that have delivered multi-million user acquisitions and substantial revenue growth across technology, financial services, and consumer products sectors. As an independent consultant and industry advisor, he provides strategic guidance to high-growth companies while actively contributing expertise through professional marketing associations, industry publications, and international conference presentations.

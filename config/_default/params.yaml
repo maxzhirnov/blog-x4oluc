@@ -14,14 +14,11 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo blog theme powered by Hugo Blox Builder.'
-    twitter: 'GetResearchDev'
+    description: 'Maksim Zhirnov - Growth Marketing Expert with exceptional track record in product scaling, industry recognition, and proven expertise in marketing technology innovation. Independent consultant and industry advisor.'
+    keywords: 'growth marketing, product strategy, user acquisition, data-driven marketing, growth hacking, conversion optimization, marketing consultant'
+    twitter: ''
   analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
+    google_tag_manager: 'GTM-PCQKVF3'
   verification:
     google: ''
     baidu: ''

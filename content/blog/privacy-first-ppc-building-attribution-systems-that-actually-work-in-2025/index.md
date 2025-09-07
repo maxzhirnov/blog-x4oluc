@@ -2,8 +2,8 @@
 title: "Privacy-First PPC: Building Attribution Systems That Actually Work in 2025" 
 summary: "Learn how to build privacy-compliant attribution systems that actually work. Includes real case studies with 73% improvement in tracking and $2.3M ROI recovery."
 slug: "privacy-first-ppc-attribution-systems-2025"
-date: 2025-09-06
-draft: true
+date: 2025-09-07
+draft: false
 
 authors:
   - admin

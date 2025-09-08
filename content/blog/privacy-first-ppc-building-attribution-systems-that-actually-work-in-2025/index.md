@@ -2,6 +2,7 @@
 title: "Privacy-First PPC: Building Attribution Systems That Actually Work in 2025" 
 summary: "Learn how to build privacy-compliant attribution systems that actually work. Includes real case studies with 73% improvement in tracking and $2.3M ROI recovery."
 slug: "privacy-first-ppc-attribution-systems-2025"
+editable: false
 date: 2025-09-07
 draft: false
 
@@ -42,11 +43,9 @@ Deploy a Customer Data Platform (CDP) or build custom data pipelines that aggreg
 - **Offline conversion data** (phone calls, in-store purchases)
 - **Customer service interactions**
 
-{{% callout note %}}
-**Server-Side Implementation Results: SaaS Case Study:**
-
+{{% case-study title="Server-Side Implementation Results: SaaS Case Study" icon="📈" %}}
 For a SaaS client, we implemented server-side tracking that captured 73% more conversion events than the previous cookie-based system. By combining form submissions, demo requests, and trial signups into a unified attribution model, we identified $2.3M in previously "dark" advertising ROI.
-{{% /callout %}}
+{{% /case-study %}}
 
 ### Pillar 2: Statistical Modeling and Incrementality Testing
 
@@ -99,11 +98,9 @@ The key is **maximizing signal quality within privacy constraints**, not trying 
 - Deploy anomaly detection systems to identify measurement issues
 - Create automated reporting dashboards combining multiple attribution methods
 
-{{% callout note %}}
-**Real-World Case Study: European Expansion**
-
-For a SaaS client, we implemented server-side tracking that captured 73% more conversion events than the previous cookie-based system. By combining form submissions, demo requests, and trial signups into a unified attribution model, we identified $2.3M in previously "dark" advertising ROI.
-{{% /callout %}}
+{{% case-study title="Real-World Case Study: European Expansion" icon="📈" %}}  
+When I led attribution modernization for a European expansion, the geo-lift testing revealed that our previous attribution model was overcrediting social media by 147% and undercrediting search by 34%. This led to a budget reallocation that improved overall ROAS by 28%.
+{{% /case-study %}}
 
 ### Phase 3: Optimization and Scaling (Weeks 9-12)
 

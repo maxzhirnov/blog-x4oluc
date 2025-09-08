@@ -1,0 +1,44 @@
+{{- $title := .Get "title" | default "Real-World Case Study" -}}
+{{- $icon := .Get "icon" | default "💼" -}}
+
+{{- $authorSlug := .Get "author" | default "admin" -}}
+{{- $authorPage := site.GetPage (printf "/authors/%s" $authorSlug) -}}
+
+{{- $authorName := .Get "name" -}}
+{{- $authorRole := .Get "role" -}}
+{{- $authorAvatar := .Get "avatar" -}}
+
+{{- if and $authorPage (not $authorName) -}}
+  {{- $authorName = $authorPage.Title -}}
+  {{- $authorRole = $authorPage.Params.role | default "" -}}
+
+  {{- with $authorPage.Resources.GetMatch "avatar*" -}}
+    {{- $scaledAvatar := .Fill "40x40 webp q90" -}}
+    {{- $authorAvatar = $scaledAvatar.RelPermalink -}}
+  {{- else -}}
+    {{- $authorAvatar = "" -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="case-study-container">
+  <div class="case-study-header">
+    <span class="case-study-icon">{{ $icon }}</span>
+    <h4 class="case-study-title">{{ $title }}</h4>
+  </div>
+  <div class="case-study-content">
+    {{ .Inner | markdownify }}
+  </div>
+  {{- if $authorName -}}
+  <div class="case-study-author">
+    {{- if $authorAvatar -}}
+    <img src="{{ $authorAvatar }}" alt="{{ $authorName }}" class="author-avatar">
+    {{- end -}}
+    <div class="author-info">
+      <span class="author-name">{{ $authorName }}</span>
+      {{- if $authorRole -}}
+      <span class="author-role">{{ $authorRole }}</span>
+      {{- end -}}
+    </div>
+  </div>
+  {{- end -}}
+</div>

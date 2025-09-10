@@ -26,6 +26,8 @@ marketing:
 # Site header
 header:
   navbar:
+    # align: "left"
+    highlight_active_link: true
     enable: true
     show_search: true
     show_theme_chooser: true

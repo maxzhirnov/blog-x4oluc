@@ -1,3 +1,14 @@
+/* padding for mobile */
+@media (max-width: 640px) {
+  #section-resume-biography {
+    padding: 0 1rem !important;
+  }
+
+  #section-collection {
+    padding-top: 0 !important;
+  }
+}
+
 img {
   margin-top: 0 !important;
   margin-bottom: 0 !important;

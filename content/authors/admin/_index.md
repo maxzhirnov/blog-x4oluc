@@ -33,19 +33,21 @@ bio: Growth marketing strategist, product expert, and independent consultant spe
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
+  - icon: custom/envelope
     url: 'mailto:maximz2009@gmail.com'
     label: E-mail Me
   # - icon: brands/x
   #   url: https://twitter.com/
   # - icon: brands/instagram
   #   url: https://www.instagram.com/maxzhirnov
-  - icon: brands/linkedin
+  - icon: custom/linkedin
     url: https://www.linkedin.com/in/maksim-zhirnov/
+  - icon: custom/medium
+    urel: https://www.medium.com
   # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
-  - icon: academicons/cv
-    url: uploads/resume.pdf
-    label: Download my resume
+  # - icon: academicons/cv
+  #   url: uploads/resume.pdf
+  #   label: Download my resume
   # - icon: rss
   #   url: ./post/index.xml
   #   label: Subscribe to my blog via RSS feed
@@ -57,5 +59,4 @@ highlight_name: true
 website: ""
 ---
 
-
-Maxim Zhirnov is a senior growth marketing strategist and industry expert with 10+ years of experience scaling digital products from startup to enterprise level, specializing in data-driven growth optimization, user acquisition strategies, and product-led growth frameworks that have delivered multi-million user acquisitions and substantial revenue growth across technology, financial services, and consumer products sectors. As an independent consultant and industry advisor, he provides strategic guidance to high-growth companies while actively contributing expertise through professional marketing associations, industry publications, and international conference presentations.
+I'm a senior growth marketing strategist with 10+ years of experience scaling digital products and delivering multi-million user acquisitions. As an independent consultant and recognized industry voice, I regularly share insights through publications and speaking engagements.

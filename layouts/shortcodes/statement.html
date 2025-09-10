@@ -1,0 +1,15 @@
+{{- $type := .Get "type" | default "key" -}}
+{{- $icon := .Get "icon" | default "" -}}
+{{- if and (not $icon) (eq $type "key") -}}{{ $icon = "💡" }}{{- end -}}
+{{- if and (not $icon) (eq $type "prediction") -}}{{ $icon = "🔮" }}{{- end -}}
+{{- if and (not $icon) (eq $type "insight") -}}{{ $icon = "⚡" }}{{- end -}}
+{{- if and (not $icon) (eq $type "warning") -}}{{ $icon = "⚠️" }}{{- end -}}
+
+<div class="statement statement--{{ $type }}">
+  {{- if $icon -}}
+  <div class="statement__icon">{{ $icon }}</div>
+  {{- end -}}
+  <div class="statement__content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

@@ -29,6 +29,9 @@ header:
     enable: true
     show_search: true
     show_theme_chooser: true
+    logo:
+        text: "Maksim Zhirnov"
+        # filename: "logo.png"
 
 # Site footer
 footer:

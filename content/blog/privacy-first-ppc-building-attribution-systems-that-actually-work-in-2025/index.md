@@ -10,11 +10,9 @@ authors:
   - admin
 
 tags:
-  - "privacy-first-attribution"  
-  - "performance-marketing"
-  - "digital-attribution"
-  - "marketing-analytics"
-  - "ppc-attribution"
+  - privacy
+  - analytics
+  - performance
 ---
 
 ## Introduction: The Attribution Crisis is Real—And Getting Worse

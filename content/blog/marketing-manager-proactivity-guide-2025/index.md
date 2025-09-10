@@ -10,11 +10,9 @@ authors:
   - admin
 
 tags:
-  - "proactivity-marketing"
-  - "marketing-management"
-  - "career-development"
-  - "marketing-strategy"
-  - "performance-marketing"
+  - management
+  - strategy
+  - growth
 ---
 
 *Or: How to Stop Being "That Person" Who Waits for Instructions*

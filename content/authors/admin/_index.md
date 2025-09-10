@@ -43,7 +43,7 @@ profiles:
   - icon: custom/linkedin
     url: https://www.linkedin.com/in/maksim-zhirnov/
   - icon: custom/medium
-    urel: https://www.medium.com
+    url: https://medium.com/@mzhirnov
   # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
   # - icon: academicons/cv
   #   url: uploads/resume.pdf

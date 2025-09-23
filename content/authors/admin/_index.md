@@ -36,10 +36,6 @@ profiles:
   - icon: custom/envelope
     url: 'mailto:maximz2009@gmail.com'
     label: E-mail Me
-  # - icon: brands/x
-  #   url: https://twitter.com/
-  # - icon: brands/instagram
-  #   url: https://www.instagram.com/maxzhirnov
   - icon: custom/linkedin
     url: https://www.linkedin.com/in/maksim-zhirnov/
   - icon: custom/medium

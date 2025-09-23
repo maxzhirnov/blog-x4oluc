@@ -3,8 +3,8 @@ title: "The Soviet Innovation Secret That's Revolutionizing Marketing (And Why M
 summary: "How a 1940s Russian inventor's methodology is solving modern marketing contradictions that brainstorming sessions can't touch. Real case studies with 2-5x performance improvements."
 slug: "triz-marketing-soviet-innovation-secret"
 editable: false
-date: 2025-09-10
-draft: true
+date: 2025-09-23
+draft: false
 
 authors:
   - admin

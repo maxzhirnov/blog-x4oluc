@@ -1,3 +1,44 @@
+/* assets/css/custom.css */
+.site-footer {
+    background-color: var(--color-white);
+    transition: background-color 0.2s ease;
+}
+
+.site-footer:where(.dark, .dark *) {
+    background-color: var(--color-zinc-800);
+}
+
+/* Или используйте тот же класс что и хедер */
+.site-footer.header {
+    background-color: var(--color-white);
+}
+
+.site-footer.header:where(.dark, .dark *) {
+    background-color: var(--color-zinc-800);
+}
+
+
+/* Кастомные иконки - белые в темной теме */
+.dark .network-icon svg {
+  fill: white !important;
+  stroke: white !important;
+}
+
+/* Или более конкретно для ваших иконок */
+.dark a[href*="mailto:"] .network-icon svg,
+.dark a[href*="linkedin.com"] .network-icon svg,
+.dark a[href*="medium.com"] .network-icon svg {
+  fill: white !important;
+  stroke: white !important;
+}
+
+/* Хуки в светлой теме (чтобы не сломать) */
+.network-icon svg {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+
 /* padding for mobile */
 @media (max-width: 640px) {
   #section-resume-biography {

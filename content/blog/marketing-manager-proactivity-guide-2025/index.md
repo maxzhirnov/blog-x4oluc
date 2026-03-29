@@ -3,7 +3,7 @@ title: "From Buzzword to Breakthrough: The Marketing Manager's Guide to Real Pro
 summary: "Stop guessing what 'be more proactive' means. Get a concrete framework with 10 actionable strategies, real examples, and a 30-day challenge to level up your marketing career."
 slug: "marketing-manager-proactivity-guide-2025"
 editable: false
-date: 2025-09-08
+date: 2025-11-18
 draft: false
 
 authors:

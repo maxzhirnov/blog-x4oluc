@@ -3,7 +3,7 @@ title: "The Soviet Innovation Secret That's Revolutionizing Marketing (And Why M
 summary: "How a 1940s Russian inventor's methodology is solving modern marketing contradictions that brainstorming sessions can't touch. Real case studies with 2-5x performance improvements."
 slug: "triz-marketing-soviet-innovation-secret"
 editable: false
-date: 2025-09-23
+date: 2026-02-12
 draft: false
 
 authors:
@@ -58,7 +58,7 @@ Think about that for a moment. While Western companies were still doing those st
 
 The methodology was so powerful that the Soviet government kept it classified for decades. Only after the Cold War ended did TRIZ start trickling into Western companies, where it completely flipped R&D departments on their heads.
 
-**Over the past five years, I've adapted these principles for marketing challenges across 10+ companies—from BigTech operations down to scrappy startups. The results? We consistently hit 2-5x performance improvements where traditional approaches fell flat.**
+**Over the past five years, I've adapted these principles for marketing challenges across 12+ companies—from BigTech operations down to scrappy startups. The results? We consistently hit 2-5x performance improvements where traditional approaches fell flat.**
 
 And honestly? It's about to flip everything you think you know about marketing innovation.
 

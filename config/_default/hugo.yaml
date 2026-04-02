@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: "Makim Zhirnov — Driving Growth Through Data & Product Excellence)" # Website name
+title: "Maksim Zhirnov — Driving Growth Through Data & Product Excellence" # Website name
 baseURL: 'https://mzhirnov.com/' # Website URL
 
 ############################

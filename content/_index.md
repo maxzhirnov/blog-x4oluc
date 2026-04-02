@@ -1,5 +1,7 @@
 ---
 title: 'Home'
+seo:
+  title: 'Maksim Zhirnov | Growth Marketing Consultant & Product Strategist'
 date: 2023-10-24
 type: landing
 sections:

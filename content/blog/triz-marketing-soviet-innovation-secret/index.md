@@ -86,7 +86,7 @@ In my consulting work, I've spotted what I call "Marketing Contradiction Pattern
 
 Let me level with you—modern marketing is absolutely drowning in contradictions.
 
-![](marketing-contradictions.png)
+![Diagram of core marketing contradictions such as personalization versus scale, privacy versus data, and speed versus sustainability](marketing-contradictions.png)
 
 Look at these impossible demands we face every single day:
 - We want **personalization** at **scale** (good luck with that)
@@ -180,7 +180,7 @@ We created a systematic creative production line:
 
 **The Anti-Pattern:** Their main competitor tried solving the "speed problem" by using AI-generated creative that looked like it was designed by a robot having a seizure. Their CTRs plummeted, brand recognition suffered, and they eventually had to rebrand just to escape the damage. Sometimes cutting corners backfires spectacularly.
 
-![](cases-results.png)
+![Summary graphic showing three TRIZ marketing case studies and their performance improvements](cases-results.png)
 
 ## The TRIZ Marketing Toolkit: Your Escape from Creative Chaos
 
@@ -188,7 +188,7 @@ Traditional brainstorming sessions often lead teams in circles—you know this a
 
 Here's how to start applying TRIZ principles to your marketing challenges:
 
-![](triz-toolkit.png)
+![TRIZ marketing toolkit visual outlining contradiction analysis, cross-industry solution search, and ideal outcome design](triz-toolkit.png)
 
 ### 1. **Identify the Real Contradiction**
 Instead of: "Our CTRs are terrible"  

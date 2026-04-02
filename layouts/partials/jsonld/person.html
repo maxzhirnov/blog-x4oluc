@@ -1,0 +1,32 @@
+{{ $page := .page }}
+{{ $authorPage := site.GetPage "/authors/admin" }}
+{{ if $authorPage }}
+  {{ $person := $authorPage.Params }}
+  {{ $avatar := ($authorPage.Resources.ByType "image").GetMatch "*avatar*" }}
+  {{ $sameAs := slice }}
+  {{ range $person.profiles }}
+    {{ $link := .url | default .link }}
+    {{ $scheme := (urls.Parse $link).Scheme }}
+    {{ if in (slice "http" "https") $scheme }}
+      {{ $sameAs = $sameAs | append $link }}
+    {{ end }}
+  {{ end }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ $authorPage.Title }},
+    {{ with $person.first_name }}"givenName": {{ . }},{{ end }}
+    {{ with $person.last_name }}"familyName": {{ . }},{{ end }}
+    {{ with $person.role }}"jobTitle": {{ . }},{{ end }}
+    "url": {{ site.BaseURL }},
+    {{ with $person.bio }}"description": {{ . }},{{ end }}
+    {{ with $avatar }}"image": {{ .Permalink }},{{ end }}
+    {{ with $sameAs }}
+    "sameAs": [
+      {{ range $index, $url := . }}{{ if gt $index 0 }},{{ end }}{{ $url }}{{ end }}
+    ]
+    {{ end }}
+  }
+  </script>
+{{ end }}

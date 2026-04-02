@@ -20,21 +20,21 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Growth Marketing Expert & Product Strategist
+role: Independent Consultant in Growth, Product, and MarTech
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Independent Marketing Technology Consultant
+  - name: Helping digital products scale through acquisition, GTM, and product strategy
     url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Growth marketing strategist, product expert, and independent consultant specializing in scalable user acquisition and data-driven optimization.
+bio: Independent consultant helping digital products grow through acquisition, GTM strategy, and product-led optimization.
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: custom/envelope
-    url: 'mailto:maximz2009@gmail.com'
+    url: 'mailto:me@mzhirnov.com'
     label: E-mail Me
   - icon: custom/linkedin
     url: https://www.linkedin.com/in/maksim-zhirnov/
@@ -53,6 +53,12 @@ highlight_name: true
 
 # Author's website URL
 website: ""
+
+# First full year of relevant experience
+career_start_year: 2014
+
+# Friendly CTA shown under contact icons on the homepage
+contact_cta: Have something in mind? Email me at [me@mzhirnov.com](mailto:me@mzhirnov.com).
 ---
 
-I'm a senior growth marketing strategist with 10+ years of experience scaling digital products and delivering multi-million user acquisitions. As an independent consultant and recognized industry voice, I regularly share insights through publications and speaking engagements.
+I’m a senior growth marketing strategist with {{< years-of-experience >}} years of experience scaling digital products and driving multi-million user acquisition. I work with companies on growth strategy, go-to-market execution, and product-led optimization.

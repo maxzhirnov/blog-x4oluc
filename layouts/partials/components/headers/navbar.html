@@ -1,6 +1,6 @@
 <header id="site-header" class="header">
-  <nav class="navbar px-3 flex justify-start">
-    <div class="order-0 h-full">
+  <nav class="navbar px-3 flex justify-end">
+    <div class="order-0 h-full flex-shrink-0 hidden">
       <!-- Brand -->
       <a class="navbar-brand" href="{{ site.Home.RelPermalink }}" title="{{ site.Title }}">
         {{- $logo_filename := site.Params.header.navbar.logo.filename -}}
@@ -32,7 +32,7 @@
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
       for="nav-toggle"
-      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      class="mobile-nav-toggle order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
       <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
         <title>Open Menu</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
@@ -50,8 +50,7 @@
     {{ $align_menu := site.Params.header.navbar.align | default "center" }}
     <ul
       id="nav-menu"
-      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-start
-      {{ if in (slice "l" "left") $align_menu }}mr-auto ml-6{{ else if (in (slice "r" "right") $align_menu) }}ml-auto mr-6{{end}}">
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-start lg:ml-auto lg:mr-0">
       {{ $currentPage := . }}
       {{ range site.Menus.main }}
       {{ $menuURL := .URL | absLangURL }}
@@ -135,18 +134,9 @@
       {{ end }}
     </ul>
 
-    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+    <label for="nav-toggle" class="mobile-nav-backdrop lg:hidden" aria-hidden="true"></label>
 
-      {{/* Show site search? */}}
-      {{ $show_search := site.Params.header.navbar.show_search | default false }}
-      {{ with $show_search }}
-      <button
-        aria-label="toggle search"
-        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
-        data-search-toggle>
-        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-      </button>
-      {{ end }}
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-4 lg:flex-shrink-0">
 
       {{ $show_theme_chooser := site.Params.header.navbar.show_theme_chooser | default true }}
       {{ if $show_theme_chooser }}
@@ -197,7 +187,3 @@
     </div>
   </nav>
 </header>
-
-{{ if $show_search }}
-  {{- partial "components/search-modal.html" . -}}
-{{ end }}

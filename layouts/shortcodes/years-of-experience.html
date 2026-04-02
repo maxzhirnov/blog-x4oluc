@@ -1,0 +1,5 @@
+{{- $startYear := .Get 0 | default .Page.Params.career_start_year -}}
+{{- if not $startYear -}}
+  {{- errorf "years-of-experience shortcode requires a start year or .Page.Params.career_start_year on %s" .Page.File.Path -}}
+{{- end -}}
+{{- sub now.Year (int $startYear) -}}

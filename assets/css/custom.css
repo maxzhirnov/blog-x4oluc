@@ -695,3 +695,208 @@ figure {
     font-size: 1rem;
   }
 }
+
+#section-media-profile {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.media-profile {
+  --media-border: rgba(15, 23, 42, 0.08);
+  --media-border-strong: rgba(15, 23, 42, 0.1);
+  --media-text: rgba(15, 23, 42, 0.72);
+  --media-surface: transparent;
+  --media-surface-strong: rgba(255, 255, 255, 0.02);
+  --media-accent: #f15c3c;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.dark .media-profile {
+  --media-border: rgba(255, 255, 255, 0.08);
+  --media-border-strong: rgba(255, 255, 255, 0.12);
+  --media-text: rgba(255, 255, 255, 0.72);
+  --media-surface: transparent;
+  --media-surface-strong: rgba(255, 255, 255, 0.02);
+}
+
+.media-profile__header {
+  max-width: 42rem;
+  margin-bottom: 2rem;
+}
+
+.media-profile__title {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.media-profile__intro {
+  margin: 0.9rem 0 0;
+  color: var(--media-text);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.media-profile__featured {
+  margin-bottom: 1.5rem;
+  padding: 0 0 1.6rem;
+  border-bottom: 1px solid var(--media-border-strong);
+  background:
+    radial-gradient(circle at top right, rgba(241, 92, 60, 0.09), transparent 28%),
+    transparent;
+}
+
+.media-profile__featured-copy {
+  max-width: 42rem;
+}
+
+.media-profile__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(241, 92, 60, 0.1);
+  color: var(--media-accent);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.media-profile__featured-title {
+  margin: 1rem 0 0;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.media-profile__featured-meta,
+.media-profile__featured-description {
+  margin: 0.65rem 0 0;
+  color: var(--media-text);
+  line-height: 1.7;
+}
+
+.media-profile__featured-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  color: var(--media-accent);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.media-profile__featured-link:hover {
+  opacity: 0.82;
+}
+
+.media-profile__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.media-profile__column {
+  min-width: 0;
+}
+
+.media-profile__column-header {
+  margin-bottom: 0.8rem;
+}
+
+.media-profile__column-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.media-profile__items {
+  display: grid;
+  gap: 0;
+}
+
+.media-profile__item {
+  display: block;
+  height: 100%;
+  padding: 1rem 0;
+  border-top: 1px solid var(--media-border);
+  background: var(--media-surface);
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.18s ease, border-color 0.18s ease;
+}
+
+.media-profile__item:hover {
+  border-color: rgba(241, 92, 60, 0.28);
+  opacity: 0.92;
+}
+
+.media-profile__item-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.55rem;
+}
+
+.media-profile__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--media-accent);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.media-profile__item-title {
+  margin: 0;
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+
+.media-profile__item-arrow {
+  flex-shrink: 0;
+  color: var(--media-accent);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.media-profile__item-description {
+  margin: 0.55rem 0 0;
+  color: var(--media-text);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .media-profile__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  #section-media-profile {
+    padding-top: 0.5rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .media-profile__featured {
+    padding-bottom: 1.35rem;
+  }
+
+  .media-profile__item {
+    padding: 0.95rem 0;
+  }
+}

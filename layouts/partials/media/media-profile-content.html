@@ -1,0 +1,63 @@
+{{ $content := .content }}
+{{ $featured := $content.featured }}
+
+<div class="media-profile">
+  <div class="media-profile__header">
+    {{ with $content.title }}
+      <h2 class="media-profile__title">{{ . }}</h2>
+    {{ end }}
+    {{ with $content.text }}
+      <p class="media-profile__intro">{{ . }}</p>
+    {{ end }}
+  </div>
+
+  {{ with $featured }}
+    <article class="media-profile__featured">
+      <div class="media-profile__featured-copy">
+        {{ with .eyebrow }}
+          <div class="media-profile__eyebrow">{{ . }}</div>
+        {{ end }}
+        {{ with .title }}
+          <h3 class="media-profile__featured-title">{{ . }}</h3>
+        {{ end }}
+        {{ with .venue }}
+          <p class="media-profile__featured-meta">{{ . }}</p>
+        {{ end }}
+        {{ with .description }}
+          <p class="media-profile__featured-description">{{ . }}</p>
+        {{ end }}
+        {{ with .url }}
+          <a class="media-profile__featured-link" href="{{ . | safeURL }}" target="_blank" rel="noopener">
+            {{ $.content.featured.cta | default "Open" }} <span aria-hidden="true">↗</span>
+          </a>
+        {{ end }}
+      </div>
+    </article>
+  {{ end }}
+
+  <div class="media-profile__grid">
+    {{ range $content.categories }}
+      <section class="media-profile__column" aria-label="{{ .title }}">
+        <div class="media-profile__column-header">
+          <h3 class="media-profile__column-title">{{ .title }}</h3>
+        </div>
+        <div class="media-profile__items">
+          {{ range .items }}
+            <a class="media-profile__item" href="{{ .url | safeURL }}" target="_blank" rel="noopener">
+              <div class="media-profile__item-topline">
+                {{ with .meta }}
+                  <span class="media-profile__badge">{{ . }}</span>
+                {{ end }}
+                <span class="media-profile__item-arrow" aria-hidden="true">↗</span>
+              </div>
+              <h4 class="media-profile__item-title">{{ .title }}</h4>
+              {{ with .description }}
+                <p class="media-profile__item-description">{{ . }}</p>
+              {{ end }}
+            </a>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  </div>
+</div>

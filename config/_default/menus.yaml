@@ -5,6 +5,9 @@ main:
   - name: Home
     url: /
     weight: 10
+  - name: Media
+    url: /media
+    weight: 20
   - name: Blog
     url: /blog
-    weight: 20
+    weight: 30

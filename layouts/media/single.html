@@ -1,0 +1,6 @@
+{{ define "main" }}
+  {{ $content := merge .Params (dict "title" (.Params.title_display | default .Title)) }}
+  <section id="section-media-page" class="relative mx-auto max-w-6xl px-4 pb-20 pt-16 sm:px-6 lg:px-8 lg:pt-20">
+    {{ partial "media/media-profile-content" (dict "content" $content) }}
+  </section>
+{{ end }}

@@ -1,4 +1,24 @@
 /* assets/css/custom.css */
+.dark {
+  color-scheme: dark;
+}
+
+.dark html,
+.dark body,
+html.dark,
+body.dark {
+  background: #111111;
+}
+
+.dark main,
+.dark .page-wrapper,
+.dark .site-wrapper,
+.dark #main,
+.dark .home-section,
+.dark section {
+  background-color: #111111;
+}
+
 .dark #site-header {
   background: #111111;
 }
@@ -19,7 +39,11 @@
 #site-header #nav-menu .nav-link {
   padding-top: 0.35rem;
   padding-bottom: 0.35rem;
-  font-size: 0.98rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  position: relative;
 }
 
 #site-header .nav-link,
@@ -27,7 +51,32 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.92;
+  opacity: 0.8;
+}
+
+#site-header .nav-link:hover,
+#site-header .nav-link.active {
+  opacity: 1;
+}
+
+#site-header #nav-menu .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.12rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0;
+  transform: scaleX(0.4);
+  transform-origin: left;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+#site-header #nav-menu .nav-link:hover::after,
+#site-header #nav-menu .nav-link.active::after {
+  opacity: 0.45;
+  transform: scaleX(1);
 }
 
 #site-header .theme-toggle:hover {
@@ -91,7 +140,7 @@ input#nav-toggle:checked + .mobile-nav-toggle #hide-button {
 }
 
 .site-footer:where(.dark, .dark *) {
-    background-color: var(--color-zinc-800);
+    background-color: #111111;
 }
 
 /* Или используйте тот же класс что и хедер */
@@ -100,7 +149,7 @@ input#nav-toggle:checked + .mobile-nav-toggle #hide-button {
 }
 
 .site-footer.header:where(.dark, .dark *) {
-    background-color: var(--color-zinc-800);
+    background-color: #111111;
 }
 
 
@@ -281,7 +330,24 @@ input#nav-toggle:checked + .mobile-nav-toggle #hide-button {
 
   #site-header #nav-menu .nav-link:hover,
   #site-header #nav-menu .nav-link.active {
-    background: rgba(15, 23, 42, 0.06);
+    background: transparent;
+  }
+
+  #site-header #nav-menu .nav-link::after {
+    left: 50%;
+    right: auto;
+    width: 1.15rem;
+    bottom: 0.5rem;
+    transform: translateX(-50%) scaleX(1);
+    transform-origin: center;
+  }
+
+  #site-header #nav-menu .nav-link:hover::after {
+    opacity: 0;
+  }
+
+  #site-header #nav-menu .nav-link.active::after {
+    opacity: 0.45;
   }
 
   #site-header .mobile-nav-backdrop {
@@ -314,7 +380,7 @@ input#nav-toggle:checked + .mobile-nav-toggle #hide-button {
 
   .dark #site-header #nav-menu .nav-link:hover,
   .dark #site-header #nav-menu .nav-link.active {
-    background: rgba(255, 255, 255, 0.06);
+    background: transparent;
   }
 
   .dark #site-header .mobile-nav-backdrop {
@@ -347,18 +413,21 @@ input#nav-toggle:checked + .mobile-nav-toggle #hide-button {
 
 @media (min-width: 1024px) {
   #site-header .navbar {
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-top: 0.1rem;
+    padding-right: 1.25rem;
     padding-bottom: 0.1rem;
+    padding-left: 2rem;
   }
 
   #site-header #nav-menu {
     width: auto;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: auto;
-    justify-content: flex-end;
-    gap: 1.25rem;
+    margin-left: 0;
+    margin-right: auto;
+    justify-content: flex-start;
+    gap: 1.2rem;
   }
 
   #site-header #nav-menu .nav-item + .nav-item {
@@ -371,7 +440,8 @@ input#nav-toggle:checked + .mobile-nav-toggle #hide-button {
   }
 
   #site-header > .navbar > .order-1 {
-    margin-left: 1.25rem;
+    margin-left: 1.5rem;
+    padding-right: 0.15rem;
   }
 }
 

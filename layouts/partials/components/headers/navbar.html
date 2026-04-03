@@ -55,7 +55,9 @@
       {{ range site.Menus.main }}
       {{ $menuURL := .URL | absLangURL }}
       {{ $pageURL:= $currentPage.Permalink | absLangURL }}
-      {{ $active := eq $menuURL $pageURL }}
+      {{ $menuURLNormalized := strings.TrimSuffix "/" $menuURL }}
+      {{ $pageURLNormalized := strings.TrimSuffix "/" $pageURL }}
+      {{ $active := eq $menuURLNormalized $pageURLNormalized }}
       {{ if .HasChildren }}
       <li class="nav-item nav-dropdown group relative">
             <span

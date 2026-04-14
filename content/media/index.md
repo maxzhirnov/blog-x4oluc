@@ -4,14 +4,13 @@ type: media
 url: /media/
 title_display: "Media, Speaking & Jury Work"
 text: "A selection of interviews, published articles, jury roles, and public appearances across marketing, growth, and mobile."
-featured:
-  eyebrow: Upcoming panel
-  title: Mobile Forum 2026
-  venue: April 13, 2026
-  description: Panel discussion on fintech in mobile, covering the state of the industry, core challenges, and what makes promotion in the category different.
-  url: https://mobileforum.ru/table
-  cta: View agenda
 categories:
+  - title: Speaking
+    items:
+      - title: Mobile Forum 2026
+        meta: Speaker, April 13, 2026
+        description: Panel discussion on fintech in mobile, covering the state of the industry, core challenges, and what makes promotion in the category different.
+        url: https://mobileforum.ru/table
   - title: Interviews
     items:
       - title: Cossa
